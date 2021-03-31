@@ -50,7 +50,6 @@ export default {
         background-image: url('../assets/PhotoAbdsArtc.png');
         background-repeat:no-repeat;
         background-size:cover; 
-        justify-content: flex-end;
         flex-direction: column;
         box-sizing: border-box;
         padding: 0 4rem 0 4rem;
@@ -110,4 +109,45 @@ export default {
         text-align: center;
     }
 
+@media (max-width: 1024px){
+
+    .SectionHeroArt{
+        height: auto;
+        
+    }
+    .BackBlack{
+        height: auto;
+    }
+    .SecPhotoText{
+        flex-direction: column;
+    }
+    .BackPhoto{
+    background-image: none;
+    }
+    .PhotoAbsArt{
+        height: auto;
+        padding: 5% ;
+        background: #222222;
+        align-items: center;
+    }
+    .ButtonHead{
+        height:50px ;
+        width: 50%;
+    }
+    .BuyTk{
+        text-align: center;
+        margin: 5% 0 5% 0;
+    }
+    .flow{
+        justify-content: center;
+        text-align: center;
+    }
+    .TextTooBot{
+          margin: 5% 0 5% 0;
+          text-align: center;
+    }
+    .BackBlack{
+        padding: 5%;
+    }
+}
 </style>

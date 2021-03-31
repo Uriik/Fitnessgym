@@ -60,7 +60,6 @@ export default {
 <style scoped>
 
 h1, h2, h3, h4, h5, p {
-    margin: 0;
     padding: 0;
 }
 
@@ -200,5 +199,42 @@ h5{
     justify-content: space-evenly;
     text-align: center;
     padding:0px 8.0em 0 8.0em ;
+}
+@media (max-width: 1024px){
+    .SectionExactly{
+        height: auto;
+
+    }
+    .TextEx{
+        padding: 0 0 0 0;
+         margin: 5% 0 5% 0;
+    }
+    .TitleEx{
+        margin: 5% 0 5% 0;
+    }
+    .TitleExac{
+        margin: 5% 0 5% 0;
+        padding: 5%;
+    }
+    .IconsExact{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .SectionExacHand{
+        height: auto;
+    }
+    .SectionExacBot{
+        height: auto;
+        padding: 5%;
+    }
+
+    .CardComp{
+        width: auto;
+        height: auto;
+    }
+    .CellPhone{
+        height: 8.5rem;
+    }
 }
 </style>

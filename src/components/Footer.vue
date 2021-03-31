@@ -2,9 +2,9 @@
     <div class="FooterHero flex flex-direction-column">
 
         <div class="TextHeroLor flex">
-            <div><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
-            <div><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
-            <div><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
+            <div class="FootCardLor"><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
+            <div class="FootCardLor"><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
+            <div class="FootCardLor"><p class="HeroLorem">Lorem Ipsuim Dolor Sit</p><p class="Trips">Trips / 16th March, 2019</p></div>
         </div>
 
         <div class="TextDavid flex flex-direction-column">
@@ -74,45 +74,45 @@ export default {
         height: 100vh;
     }
     .TextHeroLor{
-        background-color: #222222;
-        height: 30vh;
         justify-content: space-evenly;
+        background-color: #222222;
         align-items: center;
+        height: 30vh;    
     }
     .TextHeroLor p{
-        margin: 0;
         padding: 0;
+        margin: 0;       
     }
     .Trips{
-    color: white;
-    font-family: Raleway, 'Open Sans';
-    font-weight: 300;
-    font-size: 0.7rem;
-    text-align: center;
+        font-family: Raleway, 'Open Sans';
+        text-align: center;  
+        font-size: 0.7rem;  
+        font-weight: 300;
+        color: white;        
     }
     .HeroLorem{
-    color: white;
-    font-family: Raleway, 'Open Sans';
-    font-weight: 500;
-    font-size: 0.9rem;
-    text-align: center;        
+        font-family: Raleway, 'Open Sans';
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: white;      
     }
     .TextDavid p{
-        margin: 0;
-        padding: 0;
-        color: #00c0ff;
         font-family: Raleway, 'Open Sans';
-        font-weight: 500;
-        font-size: 0.9rem;
         text-align: center;
+        font-size: 0.9rem;
+        color: #00c0ff;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;  
     }
     .TextDavid{
+        justify-content: space-evenly;
         background-color: black;
-        height: 35vh;
-        align-items: center;
         justify-content: center;
         padding: 0 8rem 0 8rem;
-        justify-content: space-evenly;
+        align-items: center;
+        height: 35vh;   
     }
     .FooterBar{
         background-color: #222222;
@@ -123,12 +123,12 @@ export default {
         margin-left: 5rem;
     }
     .TextBot{
+        font-family: Raleway, 'Open Sans';
         box-sizing: border-box;
-        width: 20rem;
-        color: white;
         font-size: 0.9rem;
         font-weight: 300; 
-        font-family: Raleway, 'Open Sans';
+        color: white;
+        width: 20rem;  
     }
     .fab{
         font-size: 1.5rem;
@@ -148,30 +148,84 @@ export default {
     }
     .BotAll{
         justify-content: space-evenly;
-        align-items: center;
         box-sizing: border-box;
-        padding: 2rem;
-        margin-right: 5rem;
+        align-items: center;
+
     }
     ul{
         list-style: none;
         padding: 0;
     }
     .list-style{
-        list-style: none;
         justify-content: center;
         text-align: center;
+        list-style: none;   
     }
     .FooterList, a{
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300; 
-    font-family: Raleway, 'Open Sans'; 
+        font-family: Raleway, 'Open Sans'; 
+        font-size: 0.9rem;
+        font-weight: 300; 
+        color: white;
     }
     .Abt{
-    color: white;
-    font-size: 1.0rem;
-    font-weight: 600; 
-    font-family: Raleway, 'Open Sans';         
+        font-family: Raleway, 'Open Sans'; 
+        font-size: 1.0rem;
+        font-weight: 600; 
+        color: white;                
+    }
+    @media (max-width: 1024px){
+        .FooterHero{
+            height: auto;
+        }
+        .TextHeroLor{
+            height: auto;
+            padding: 5%;
+        }
+        .FootCardLor{
+            margin: 2% 0 2% 0;
+        }
+        .Trips{
+            margin: 5%;
+        }
+        .TextHeroLor p{
+            margin:10% 0 10% 0;
+        }
+        .TextDavid{
+            height: auto;
+            padding: 5%;
+        }
+        .TextDavid p{
+            margin: 3% 0 3% 0;
+        }
+        .FooterBar{
+            height: auto;
+            flex-direction: column;
+            padding: 5%;
+        }
+        .BotLeft{
+            height: auto;
+            flex-direction: column;
+            margin: 0;
+            padding: 5%;
+        }
+        .BotAll{
+            justify-content: space-around;
+        }
+        .MediaList{
+            padding: 1%;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .TextBot{
+            width: auto;
+            text-align: center;
+        }
+        .fab{
+            margin: 0;
+        }
+        .Abt{
+            text-align: center;
+        }
     }
 </style>

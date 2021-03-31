@@ -62,7 +62,6 @@ h3, p{
 }
 .TextOne{
     min-height: 20vh;
-
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
@@ -137,4 +136,29 @@ h5{
     font-weight: 600; 
     font-family: Raleway, 'Open Sans';
 }
+
+@media (max-width: 1024px){
+    .SectionThreeAll{
+        background: black;
+        height: auto;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    .CardComp{
+        background-color:rgb(59, 56, 56) ;
+        height: auto;
+        width: 100%;
+    }
+    .CardsCompany{
+        max-width: none;
+        width: auto;
+        height: auto;
+        margin:0;
+    }
+    .TextOne{
+        margin: 5% 0 5% 0;
+    }
+}
+
+
 </style>

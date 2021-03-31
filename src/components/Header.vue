@@ -48,13 +48,22 @@ export default {
 </script>
 
 
-<style scoped>
+<style >
+
+
+
+
 
 .HeaderAll {
   background-image: url("../assets/backgroundHeader.png");
   background-repeat:no-repeat ;
   background-size:cover; 
+  background-position:center top;
   height: 100vh;
+  
+}
+.SideBarListaMob, .ListNavListaMob{
+  display: none;
 }
 
 .Cabecalho{
@@ -125,48 +134,100 @@ ul{
   font-size: 1.0em; 
 }
 .SectionBuy{
-  height: 80%;
-  justify-content: center;
-  align-items: center;
   justify-content: space-evenly;
-
+  align-items: center;
+  height: 80%;
 }
 .TextCenter{
   justify-content: center;
   align-items: center;
 }
 .neon{
-  font-family: Raleway, 'Open Sans';
-  font-weight: 700;
-  font-size: 9.0rem;
-  color: transparent;
   text-shadow: 0 0 10px rgba(192, 185, 185, 0.164);
-  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
+  font-family: Raleway, 'Open Sans';
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+  font-size: 9.0rem;
+  font-weight: 700; 
 }
 .TextPress{
   font-family: Raleway, 'Open Sans';
+  text-align: center;
   font-weight: 400;
   color: white;
   margin:0 auto ;
-  width: 33%;
-  text-align: center;
+  width: 33%;  
 }
 
 .ButtonHead{
   background-color: rgba(255, 255, 255, 0.911);
-  width: 15%;
-  height: 8%;
-  align-items: center;
   justify-content: center;
   border-radius: 15px;
-
+  align-items: center;
+  height: 8%;
+  width: 15%;
 }
 .ButtonHead> a{
-  color: #00c0ff;
   font-family: Raleway, 'Open Sans';
+  text-align: center;
+  color: #00c0ff;
   font-weight: 700;
   font-size: 1.0em;
-  text-align: center;
 }
+
+/* ================================= MEDIA QUERY========================================== */
+
+
+@media (max-width: 1024px){
+
+  .HeaderAll{
+    background: rgb(0, 0, 0);
+    height: auto;
+    padding: 5%;
+  }
+  .neon{
+    font-size:4.5rem ;
+  }
+  .CenterLogo{
+    display: none;
+  }
+  .TextPress{
+    width: auto;
+    margin-bottom:5% ;
+  }
+  .LogoHim{
+    justify-content: flex-start;
+  }
+  .SideBar{
+    flex: 3;
+  }
+  .ButtonHead{
+    height: 50px;
+    width: 50%;
+  }
+.SectionBuy{
+  justify-content: space-evenly;
+}
+.neon{
+  margin-bottom:3% ;
+}
+.TextCenter{
+  margin: 5% 0 5% 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= MEDIA QUERY========================================== */
 </style>

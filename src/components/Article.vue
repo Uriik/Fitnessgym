@@ -59,22 +59,20 @@ export default {
         padding: 0;
     }
     .ArticleHero{
+        padding: 0 15rem 0 15rem;
         background-color:black;
-        height: 100vh;
         box-sizing: border-box;
-        padding: 0 15rem 0 15rem ;
+        height: 100vh;   
     }
     .Something{
-
         justify-content: center;
     }
     .Arrived {
-
         flex-direction: row-reverse;
     }
     .TextArticle {
-        align-items: center;
         justify-content: space-evenly;
+        align-items: center;
     }
     .TextLorem{
         box-sizing: border-box;
@@ -83,44 +81,67 @@ export default {
     .PhotoHasOne{
         background-image: url('../assets/PhotoHero1.png') ;
         background-repeat: no-repeat;
-        width: 6rem;
         height: 6rem;
+        width: 6rem;        
     }
     .PhotoHasTwo{
         background-image: url('../assets/PhotoHero2.png') ;
         background-repeat: no-repeat;
-        width: 6rem;
         height: 6rem;
+        width: 6rem;
     }
      .PhotoHasThree{
         background-image: url('../assets/PhotoHero3.png') ;
         background-repeat: no-repeat;
-        width: 6rem;
         height: 6rem;
+        width: 6rem;       
     }
     .FromPhoto{
-        align-items: center;
         justify-content: center;
+        align-items: center;        
     }
     .TitleTxArt{
-        color: #00c0ff;
         font-family: Raleway, 'Open Sans';
-        font-weight: 500;
-        font-size: 0.7em;
         text-align: center;
+        color: #00c0ff;       
+        font-weight: 500;
+        font-size: 0.7em;       
     }
     .TitleLorem{
-        color: #00c0ff;
         font-family: Raleway, 'Open Sans';
+        text-transform: uppercase;   
+        color: #00c0ff;        
         font-weight: 700;
-        font-size: 1.1em; 
-        text-transform: uppercase;       
+        font-size: 1.1em;            
     }
     .TextLorem{
-        color: #00c0ff;
         font-family: Raleway, 'Open Sans';
+        text-align: center; 
+        color: #00c0ff;        
         font-weight: 400;
-        font-size: 0.8em; 
-        text-align: center;       
+        font-size: 0.8em;               
+    }
+    @media (max-width: 1024px){
+        .ArticleHero{
+            height: auto;
+            padding: 5%;
+            
+        }
+        .Something, .Arrived, .NewHas{
+            height: auto;
+            padding: 5% 0 5% 0;
+            flex-direction: column;
+
+        }
+        .TextLorem{
+            text-align: center;
+            width: auto;
+            margin: 5% 0 5% 0;
+        }
+        .TitleTxArt{
+             margin: 5% 0 5% 0;
+        }
+      
+
     }
 </style>

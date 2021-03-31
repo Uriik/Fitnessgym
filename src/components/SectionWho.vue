@@ -6,7 +6,7 @@
             <p class="TextInst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro cupiditate excepturi sequi iure. Est commodi, modi id, quisquam odio distinctio nisi atque sequi doloremque tempora dignissimos consectetur vitae. Fugiat, eveniet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro cupiditate excepturi sequi iure. Est commodi, modi id, quisquam odio distinctio nisi atque sequi doloremque tempora dignissimos consectetur vitae. Fugiat, eveniet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro cupiditate excepturi sequi iure. Est commodi, modi id, quisquam odio distinctio nisi atque sequi doloremque tempora dignissimos consectetur vitae. Fugiat, eveniet.</p>
        </div>
 
-        <div class="TextTwo flex">
+        <div class="TextTwo flex ">
             <span class="CardsWho">
             <h3 class="TextCard">LOREM IPSUM DOLOR</h3>
             <p class="TextOfCards">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sequi illo suscipit incidunt quibusdam necessitatibus at similique velit reprehenderit esse fuga repellat saepe eaque temporibus, exercitationem doloremque dolores architecto commodi.</p>
@@ -69,10 +69,10 @@ h2, p{
     background-color: #222222;
     height: 50vh;
     align-items: center;
-    padding: 50px;
+    padding: 5%px;
 }
 .CardsWho{
-    padding: 20px;
+    padding: 4%;
 }
 
 .TextCard, .TextOfCards{
@@ -81,6 +81,22 @@ h2, p{
 }
 .TextOfCards{
     font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .SectionWho, .TextTwo, .TextOne{
+        height: auto;
+    }
+    .TextOne{
+        padding: 5%;
+    }
+    .TextTwo{
+        flex-direction: column;
+    }
+    .CardsWho {
+        padding: 5%;
+    }
+
 }
 
 </style>
